@@ -27,17 +27,22 @@
   </url>
   
   <url>
-    <loc>https://lotusirous.github.io/about/</loc>
+    <loc>https://lotusirous.github.io/posts/flask-session/</loc>
     <lastmod>2021-10-17</lastmod>
   </url>
   
   <url>
-    <loc>https://lotusirous.github.io/archive/</loc>
+    <loc>https://lotusirous.github.io/blog/</loc>
     <lastmod>2021-10-17</lastmod>
   </url>
   
   <url>
     <loc>https://lotusirous.github.io/</loc>
+    <lastmod>2021-10-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lotusirous.github.io/old_home/</loc>
     <lastmod>2021-10-17</lastmod>
   </url>
   
@@ -57,16 +62,6 @@
   </url>
   
   <url>
-    <loc>https://lotusirous.github.io/tags/devops/</loc>
-    <lastmod>2021-10-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lotusirous.github.io/tags/hacks/</loc>
-    <lastmod>2021-10-17</lastmod>
-  </url>
-  
-  <url>
     <loc>https://lotusirous.github.io/tags/pattern/</loc>
     <lastmod>2021-10-17</lastmod>
   </url>
@@ -77,7 +72,17 @@
   </url>
   
   <url>
+    <loc>https://lotusirous.github.io/tags/hacks/</loc>
+    <lastmod>2021-10-17</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lotusirous.github.io/tags/container/</loc>
+    <lastmod>2021-10-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lotusirous.github.io/tags/devops/</loc>
     <lastmod>2021-10-17</lastmod>
   </url>
 </urlset>
