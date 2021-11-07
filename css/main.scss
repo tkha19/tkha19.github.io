@@ -7,6 +7,17 @@ $post-title: "Zilla Slab", Georgia, Times, "Times New Roman", serif;
 $header-font: "Montserrat", "Century Gothic", Arial, Helvetica, sans-serif;
 
 
+
+.social {
+  margin-top: 3em;
+
+  a {
+    display: inline-flex;
+    padding: 10px;
+  }
+}
+
+
 .topnav {
   position: relative;
   overflow: hidden;
