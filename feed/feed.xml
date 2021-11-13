@@ -28,4 +28,15 @@
 &lt;p&gt;Let&#39;s dive in how the session is implemented.&lt;/p&gt;
 </content>
 	</entry>
+	
+	<entry>
+		<title>Crack me one</title>
+		<link href="https://lotusirous.github.io/posts/crackme-ones/"/>
+		<updated>2021-10-17T00:00:00Z</updated>
+		<id>https://lotusirous.github.io/posts/crackme-ones/</id>
+		<content type="html">&lt;h2&gt;Basic info&lt;/h2&gt;
+&lt;p&gt;Challenges link: 5c53840a33c5d475210bc6e9&lt;/p&gt;
+&lt;p&gt;This is a assembly challenges. The program computes user/password at runtime.&lt;/p&gt;
+</content>
+	</entry>
 </feed>
