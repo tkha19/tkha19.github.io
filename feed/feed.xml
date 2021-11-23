@@ -5,79 +5,12 @@
 	
 	<link href="https://lotusirous.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://lotusirous.github.io/"/>
-	<updated>2021-10-17T00:00:00Z</updated>
+	<updated>2020-10-17T00:00:00Z</updated>
 	<id>https://lotusirous.github.io/</id>
 	<author>
 		<name>Your Name Here</name>
 		<email>youremailaddress@example.com</email>
 	</author>
-	
-	<entry>
-		<title>Default flask session is insecure</title>
-		<link href="https://lotusirous.github.io/posts/flask-session/"/>
-		<updated>2021-10-17T00:00:00Z</updated>
-		<id>https://lotusirous.github.io/posts/flask-session/</id>
-		<content type="html">&lt;p&gt;Flask is &lt;a href=&quot;https://www.jetbrains.com/lp/python-developers-survey-2020/&quot;&gt;the most common web framework&lt;/a&gt; in the python world.
-This article explains how flask generates the session value which is unsecure by default.&lt;/p&gt;
-&lt;h2&gt;Flask session example&lt;/h2&gt;
-&lt;p&gt;Consider the &lt;em&gt;Hello world&lt;/em&gt; flask web application. The developer stores the admin key in the session and response a normal HTML to client&lt;/p&gt;
-&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; flask &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Flask&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; session&lt;br /&gt;&lt;br /&gt;app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Flask&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__name__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token decorator annotation punctuation&quot;&gt;@app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;route&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;    session&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;admin_key&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;foo-bar&quot;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;p&gt;Hello, World!&amp;lt;/p&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The flow as follows:&lt;/p&gt;
-  &lt;div class=&quot;mermaid&quot;&gt;
-sequenceDiagram
-    Browser --&gt;&gt; Server: GET /
-    activate Server
-    Note right of Server: session[&#39;admin_key&#39;] = &#39;foo-bar&#39;
-    Server --&gt;&gt; Browser: Set-Cookie session=eyJhZG1pbl9rZXkiOiJmb28tYmFyIn0.YWv3oA.8ccU4eP_3rOH_zFuiemOieKIw40
-    deactivate Server
-  &lt;/div&gt;
-&lt;p&gt;In the different from the common ID in PHP(PHPSESSIONID) or Java (JSESSIONID).
-The &lt;code&gt;Set-Cookie&lt;/code&gt; value is similar to a JWT token by 2 dots. and&lt;/p&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;eyJhZG1pbl9rZXkiOiJmb28tYmFyIn0.YWv3oA.8ccU4eP_3rOH_zFuiemOieKIw40&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let&#39;s investigate how flask generates the random session string.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Crack me one</title>
-		<link href="https://lotusirous.github.io/posts/crackme-ones/"/>
-		<updated>2021-10-17T00:00:00Z</updated>
-		<id>https://lotusirous.github.io/posts/crackme-ones/</id>
-		<content type="html">&lt;h2&gt;Basic info&lt;/h2&gt;
-&lt;p&gt;Challenges link: 5c53840a33c5d475210bc6e9&lt;/p&gt;
-&lt;p&gt;This is a assembly challenges. The program computes user/password at runtime.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>[Flare on 2020] Level 1</title>
-		<link href="https://lotusirous.github.io/posts/flare-on-writeup/"/>
-		<updated>2020-10-17T00:00:00Z</updated>
-		<id>https://lotusirous.github.io/posts/flare-on-writeup/</id>
-		<content type="html">&lt;p&gt;In this article, I explain the process that I solved the flare on 2020 challenges.&lt;/p&gt;
-&lt;h1&gt;Level 1&lt;/h1&gt;
-&lt;p&gt;This challenge is a python that have compiled to windows program. The organizer also gives us a source code of this program. Let&#39;s dive into the code by static analysis. We have the following functions&lt;/p&gt;
-&lt;pre class=&quot;language-txt&quot;&gt;&lt;code class=&quot;language-txt&quot;&gt; +buy_click : function&lt;br /&gt; +cat_clicked : function&lt;br /&gt; +decode_flag : function &amp;lt;--&lt;br /&gt; +game_screen : function&lt;br /&gt; +main : function&lt;br /&gt; +password_check : function &amp;lt;--&lt;br /&gt; +password_fail_screen : function&lt;br /&gt; +password_screen : function&lt;br /&gt; +victory_screen : function&lt;br /&gt;▼ variables&lt;br /&gt;    buying&lt;br /&gt;    current_autoclickers&lt;br /&gt;    current_coins&lt;br /&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;2 functions &lt;code&gt;password_check&lt;/code&gt; and &lt;code&gt;decode_flag&lt;/code&gt; are suspicious. Let&#39;s parse the function step by step.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The &lt;code&gt;password_check&lt;/code&gt; function&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Since the program requires user to enter a password with a protect screen, the developer implements this feature by 2 functions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;password_screen&lt;/code&gt; shows the input text.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;password_check&lt;/code&gt; checks the password as follows&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;password_check&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;    altered_key &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hiptu&quot;&lt;/span&gt;&lt;br /&gt;    key &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; x &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; altered_key&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; key&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The solution is super simple,
-they key is &amp;quot;ghost&amp;quot; by runnning the code in python interpreter &lt;code&gt;print(&amp;quot;&amp;quot;.join([chr(ord(x) - 1) for x in &amp;quot;hiptu&amp;quot;]))&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The &lt;code&gt;decode_flag&lt;/code&gt; function&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I found the function &lt;code&gt;victory_screen(token)&lt;/code&gt; calls the &lt;code&gt;decode_flag&lt;/code&gt; by the find references feature from &lt;a href=&quot;https://microsoft.github.io/language-server-protocol/&quot;&gt;LSP&lt;/a&gt;,
-The &lt;code&gt;game_screen&lt;/code&gt; computes the &lt;code&gt;token&lt;/code&gt; by the following logic:&lt;/p&gt;
-&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;target_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;36&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; current_coins &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;target_amount &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; current_coins &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;target_amount &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;        current_coins &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;br /&gt;    victory_screen&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current_coins &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Since we need the program to show the victory screen, the &lt;code&gt;current_coins&lt;/code&gt; should have the value greater than &lt;code&gt;(target_amount - 2 ** 20)&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;target_amount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;36&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;  &lt;span class=&quot;token comment&quot;&gt;# +1 to jump inside the while loop.&lt;/span&gt;&lt;br /&gt;current_coins &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; target_amount &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; current_coins &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;target_amount &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;    current_coins &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;br /&gt;token &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;current_coins &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now I can call the &lt;code&gt;decode_flag&lt;/code&gt; with the computed token and get the flag.&lt;/p&gt;
-&lt;pre class=&quot;language-py&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;decode_flag&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;token&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;idle_with_kitty@flare&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;on&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;com&lt;/code&gt;&lt;/pre&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>[Flare on 2020] Level 2</title>
