@@ -9,12 +9,6 @@
     "url": "https://lotusirous.github.io/about-me/"
   },
   "items": [{
-      "id": "https://lotusirous.github.io/posts/flare-on-challenge-2/",
-      "url": "https://lotusirous.github.io/posts/flare-on-challenge-2/",
-      "title": "[Flare on 2020] Level 2",
-      "content_html": "<p>This article belongs to the flare on write up series</p>\n<h2>Level 2</h2>\n<p>The descriptions suggests that the given program is a crrupted binary.</p>\n<p>Let's check the binary by <code>upx</code></p>\n<pre class=\"language-txt\"><code class=\"language-txt\">$ upx garbage.exe<br>                       Ultimate Packer for eXecutables<br>                          Copyright (C) 1996 - 2020<br>UPX 3.96        Markus Oberhumer, Laszlo Molnar &amp; John Reiser   Jan 23rd 2020<br><br>        File size         Ratio      Format      Name<br>   --------------------   ------   -----------   -----------<br>upx: garbage.exe: AlreadyPackedException: already packed by UPX<br><br>Packed 1 file: 0 ok, 1 error.</code></pre>\n",
-      "date_published": "2020-10-17T00:00:00Z"
-    },{
       "id": "https://lotusirous.github.io/posts/flare-on-challenge-1/",
       "url": "https://lotusirous.github.io/posts/flare-on-challenge-1/",
       "title": "[Flare on 2020] Level 1",
