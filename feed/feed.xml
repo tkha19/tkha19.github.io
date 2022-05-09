@@ -5,12 +5,49 @@
 	
 	<link href="https://lotusirous.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://lotusirous.github.io/"/>
-	<updated>2020-10-17T00:00:00Z</updated>
+	<updated>2021-10-17T00:00:00Z</updated>
 	<id>https://lotusirous.github.io/</id>
 	<author>
 		<name>Your Name Here</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Smart contract hacking resources</title>
+		<link href="https://lotusirous.github.io/posts/smart-contract-practices/"/>
+		<updated>2021-10-17T00:00:00Z</updated>
+		<id>https://lotusirous.github.io/posts/smart-contract-practices/</id>
+		<content type="html">&lt;p&gt;I&#39;m using the following resources to build up the background to learn/hack/secure the smart contract&lt;/p&gt;
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;Books:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mastering Ethereum: Building Smart Contracts and DApps&lt;/li&gt;
+&lt;li&gt;Building Ethereum DApps: Decentralized Applications on the Ethereum Blockchain&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tutorials:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ethereum.org/en/developers/learning-tools/&quot;&gt;All tutorials and learning-by-coding from ETH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Learn Solidity&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cryptozombies.io/&quot;&gt;CryptoZombies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://solidity-by-example.org/&quot;&gt;Solidity by Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Solidity Docs&lt;/li&gt;
+&lt;li&gt;Learn how to use &lt;a href=&quot;https://hardhat.org/&quot;&gt;HardHat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Familiarize yourself with widely used contracts (EIP 20)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Challenges&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Read writeups &amp;amp; postmortems&lt;/li&gt;
+&lt;li&gt;Do some CTF&#39;s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/M576WGiDBdQ&quot;&gt;Beginner to Expert Python Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.sigmaprime.io/-solidity-security.html&quot;&gt;Solidity Security: Comprehensive list of known attack vectors and common anti-patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://swcregistry.io/&quot;&gt;Smart Contract Weakness Classification and Test Cases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://consensys.github.io/smart-contract-best-practices/&quot;&gt;Ethereum Smart Contract Security Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>[Flare on 2020] Level 1</title>
