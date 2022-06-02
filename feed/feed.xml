@@ -17,7 +17,7 @@
 		<link href="https://lotusirous.github.io/posts/function-snippet-for-go/"/>
 		<updated>2022-05-28T00:00:00Z</updated>
 		<id>https://lotusirous.github.io/posts/function-snippet-for-go/</id>
-		<content type="html">&lt;p&gt;I really love error handling in go because of explicitly. However, typing &lt;code&gt;if err != nil&lt;/code&gt; many times make me quite annoying.
+		<content type="html">&lt;p&gt;I really love error handling in go because of explicitly. However, typing &lt;code&gt;if err != nil&lt;/code&gt; every time you want to handle the error is quite annoying.
 This post describes the step to combine the &lt;a href=&quot;https://github.com/nvim-treesitter/nvim-treesitter&quot;&gt;nvim-treesitter&lt;/a&gt; and &lt;a href=&quot;https://github.com/L3MON4D3/LuaSnip&quot;&gt;LuaSnip&lt;/a&gt; to generate the return values. It makes you type less keystrokes than before.&lt;/p&gt;
 &lt;h2&gt;Tree sitter&lt;/h2&gt;
 &lt;p&gt;Tree-sitter parses the go file and generate the AST&lt;/p&gt;
